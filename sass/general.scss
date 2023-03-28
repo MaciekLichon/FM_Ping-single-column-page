@@ -1,0 +1,20 @@
+@import './variables.scss';
+
+body {
+  font-family: $ff-regular;
+  font-size: $fs-regular-mobile;
+  font-weight: $fw-regular;
+  color: $clr-900;
+}
+
+.container {
+  margin: 0 1.75rem;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet) {
+  body {
+    font-size: $fs-regular-tablet;
+  }
+}

@@ -1,0 +1,260 @@
+/* COLORS */
+/* TYPE */
+/* BREAKPOINTS */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.21;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/* COLORS */
+/* TYPE */
+/* BREAKPOINTS */
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: #15202a;
+}
+
+.container {
+  margin: 0 1.75rem;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1.25rem;
+  }
+}
+
+.hero {
+  padding: 5rem 0.5rem 4.5rem 0.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero__logo {
+  width: 56px;
+}
+
+.hero__title {
+  font-size: 1.375rem;
+  margin-bottom: 1rem;
+  line-height: 1.45;
+}
+
+.hero__title span {
+  font-weight: 300;
+  color: #969696;
+}
+
+.hero__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  padding: 0 0.625rem;
+}
+
+.hero__form .hero__input, .hero__form .hero__button {
+  border-radius: 30px;
+}
+
+.hero__form .hero__input {
+  padding: 0.563rem 2rem;
+  border: 1px solid #c2d3ff;
+  line-height: 1.67;
+}
+
+.hero__form .hero__input::-moz-placeholder {
+  color: #b8c7ed;
+}
+
+.hero__form .hero__input::placeholder {
+  color: #b8c7ed;
+}
+
+.hero__form .hero__input:focus {
+  outline: none;
+}
+
+.hero__form .hero__errorMsg {
+  display: none;
+}
+
+.hero__form .hero__button {
+  padding: 0.75rem;
+  border: none;
+  box-shadow: 0px 5px 10px 2px rgba(76, 123, 243, 0.230414);
+  background-color: #4c7bf3;
+  color: white;
+  font-weight: 600;
+  line-height: 1.33;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.hero__form .hero__button:hover {
+  opacity: 0.8;
+}
+
+.hero__form.error .hero__input {
+  border: 1px solid #ff5466;
+}
+
+.hero__form.error .hero__errorMsg {
+  display: block;
+  font-size: 0.625rem;
+  color: #ff5466;
+  line-height: 2;
+  letter-spacing: 0.13px;
+  margin-top: -0.625rem;
+}
+
+.footer {
+  margin-top: 7.5rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.footer__icons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.footer__icons .footer__icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid rgba(76, 123, 243, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4c7bf3;
+  font-size: 0.875rem;
+  transition: 0.1s;
+}
+
+.footer__icons .footer__icon:hover {
+  background-color: #4c7bf3;
+  color: white;
+}
+
+.footer__text {
+  font-size: 0.625rem;
+  color: #969696;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 5rem 0 5.875rem 0;
+    gap: 2.5rem;
+  }
+  .hero__logo {
+    width: 90px;
+  }
+  .hero__title {
+    font-size: 2.5rem;
+    line-height: 1.25;
+  }
+  .hero__form {
+    padding: 0;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .hero__form .hero__input, .hero__form .hero__button {
+    font-size: 1rem;
+  }
+  .hero__form .hero__input {
+    padding: 1.063rem 1.875rem;
+    line-height: 1.25;
+    flex: 1;
+  }
+  .hero__form .hero__button {
+    padding: 1.125rem 0;
+    width: 200px;
+    line-height: 1.25;
+  }
+  .hero__form.error {
+    position: relative;
+  }
+  .hero__form.error .hero__errorMsg {
+    position: absolute;
+    font-size: 0.75rem;
+    line-height: 1.67;
+    letter-spacing: 0.15px;
+    top: 68px;
+    left: 30px;
+  }
+  .footer {
+    margin-top: 4.5rem;
+    gap: 1.5rem;
+  }
+  .footer__text {
+    font-size: 0.75rem;
+  }
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3MvdmFyaWFibGVzLnNjc3MiLCIuLi9zYXNzL3Jlc2V0LnNjc3MiLCJzdHlsZS5jc3MiLCIuLi9zYXNzL2dlbmVyYWwuc2NzcyIsIi4uL3Nhc3Mvc3R5bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQSxXQUFBO0FBYUEsU0FBQTtBQXVCQSxnQkFBQTtBQ3JDQTs7Q0NLQztBREZEO0VBQ0Usc0JBQXNCO0FDSXhCOztBREZBOztDQ01DO0FESEQ7RUFDRSxTQUFTO0FDS1g7O0FESEE7O0NDT0M7QURKRDtFQUNFLFlBQVk7QUNNZDs7QURKQTs7OztDQ1VDO0FETEQ7RUFDRSxpQkFBaUI7RUFDakIsbUNBQW1DO0FDT3JDOztBRExBOztDQ1NDO0FETkQ7RUFDRSxjQUFjO0VBQ2QsZUFBZTtBQ1FqQjs7QUROQTs7Q0NVQztBRFBEO0VBQ0UsYUFBYTtBQ1NmOztBRFBBOztDQ1dDO0FEUkQ7RUFDRSx5QkFBeUI7QUNVM0I7O0FEUkE7O0NDWUM7QURURDtFQUNFLGtCQUFrQjtBQ1dwQjs7QUY1REEsV0FBQTtBQWFBLFNBQUE7QUF1QkEsZ0JBQUE7QUduQ0E7RUFDRSx5Q0hZdUM7RUdYdkMsa0JIcUJ5QjtFR3BCekIsZ0JIV2M7RUdWZCxjSEYyQjtBRW1FN0I7O0FDOURBO0VBQ0UsaUJBQWlCO0VBQ2pCLGdCQUFnQjtFQUNoQixjQUFjO0FEaUVoQjs7QUM5REE7RUFDRTtJQUNFLGtCSFN1QjtFRXdEekI7QUFDRjs7QUUvRUE7RUFDRSxrQ0FBa0M7RUFDbEMsa0JBQWtCO0VBRWxCLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsU0FBUztFQUNULG1CQUFtQjtBRmlGckI7O0FFOUVBO0VBQ0UsV0FBVztBRmlGYjs7QUU5RUE7RUFDRSxtQkpDeUI7RUlBekIsbUJBQW1CO0VBQ25CLGlCSkFxQjtBRWlGdkI7O0FFcEZBO0VBTUksZ0JKUlk7RUlTWixjSnRCNEI7QUV3R2hDOztBRTlFQTtFQUNFLFdBQVc7RUFDWCxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLGFBQWE7RUFDYixtQkFBbUI7QUZpRnJCOztBRXRGQTtFQU9nQyxtQkFBbUI7QUZtRm5EOztBRTFGQTtFQVVJLHNCQUFzQjtFQUN0Qix5QkpsQ21DO0VJbUNuQyxpQkpUa0I7QUU2RnRCOztBRWhHQTtFQWNxQixjSnBDa0I7QUUwSHZDOztBRXBHQTtFQWNxQixjSnBDa0I7QUUwSHZDOztBRXBHQTtFQWVjLGFBQWE7QUZ5RjNCOztBRXhHQTtFQWtCb0IsYUFBYTtBRjBGakM7O0FFNUdBO0VBcUJJLGdCQUFnQjtFQUNoQixZQUFZO0VBQ1oseURBQXlEO0VBQ3pELHlCSjdDa0M7RUk4Q2xDLFlKcEQ0QjtFSXFENUIsZ0JKdENTO0VJdUNULGlCSjNCbUI7RUk2Qm5CLGVBQWU7RUFDZixnQkFBZ0I7QUYwRnBCOztBRXhIQTtFQWlDTSxZQUFZO0FGMkZsQjs7QUV0RkE7RUFHSSx5QkozRDZCO0FFa0pqQzs7QUUxRkE7RUFPSSxjQUFjO0VBQ2QsbUJKaER1QjtFSWlEdkIsY0pqRTZCO0VJa0U3QixjQUFjO0VBQ2Qsc0JBQXNCO0VBQ3RCLHFCQUFxQjtBRnVGekI7O0FFbkZBO0VBQ0Usa0JBQWtCO0VBQ2xCLG9CQUFvQjtFQUNwQixhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLHVCQUF1QjtFQUN2QixtQkFBbUI7RUFDbkIsWUFBWTtBRnNGZDs7QUVuRkE7RUFDRSxhQUFhO0VBQ2IsWUFBWTtBRnNGZDs7QUV4RkE7RUFLSSxXQUFXO0VBQ1gsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQiwwQ0o1RmlEO0VJOEZqRCxhQUFhO0VBQ2IsdUJBQXVCO0VBQ3ZCLG1CQUFtQjtFQUVuQixjSm5Ha0M7RUlvR2xDLG1CQUFtQjtFQUVuQixnQkFBZ0I7QUZvRnBCOztBRXJHQTtFQW9CTSx5Qkp6R2dDO0VJMEdoQyxZSmhIMEI7QUVxTWhDOztBRWhGQTtFQUNFLG1CSjdGeUI7RUk4RnpCLGNKdEg4QjtBRXlNaEM7O0FFaEZBO0VBQ0U7SUFDRSwwQkFBMEI7SUFDMUIsV0FBVztFRm1GYjtFRWhGQTtJQUNFLFdBQVc7RUZrRmI7RUUvRUE7SUFDRSxpQkpqSHFCO0lJa0hyQixpQkpqSG1CO0VFa01yQjtFRTlFQTtJQUNFLFVBQVU7SUFDVixtQkFBbUI7SUFDbkIsU0FBUztFRmdGWDtFRW5GQTtJQUtnQyxlSi9HWjtFRWdNcEI7RUV0RkE7SUFRSSwwQkFBMEI7SUFDMUIsaUJKbEhnQjtJSW1IaEIsT0FBTztFRmlGWDtFRTNGQTtJQWNJLG1CQUFtQjtJQUNuQixZQUFZO0lBQ1osaUJKN0hpQjtFRTZNckI7RUU1RUE7SUFDRSxrQkFBa0I7RUY4RXBCO0VFL0VBO0lBSUksa0JBQWtCO0lBQ2xCLGtCQUFrQjtJQUNsQixpQkFBaUI7SUFDakIsc0JBQXNCO0lBRXRCLFNBQVM7SUFDVCxVQUFVO0VGNkVkO0VFekVBO0lBQ0Usa0JBQWtCO0lBQ2xCLFdBQVc7RUYyRWI7RUV4RUE7SUFDRSxrQkoxSnVCO0VFb096QjtBQUNGIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */

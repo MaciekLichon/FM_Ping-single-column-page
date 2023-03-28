@@ -1,0 +1,22 @@
+/* COLORS */
+/* TYPE */
+/* BREAKPOINTS */
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: #15202a;
+}
+
+.container {
+  margin: 0 1.75rem;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1.25rem;
+  }
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3MvdmFyaWFibGVzLnNjc3MiLCIuLi9zYXNzL2dlbmVyYWwuc2NzcyIsImdlbmVyYWwuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBLFdBQUE7QUFhQSxTQUFBO0FBdUJBLGdCQUFBO0FDbkNBO0VBQ0UseUNEWXVDO0VDWHZDLGtCRHFCeUI7RUNwQnpCLGdCRFdjO0VDVmQsY0RGMkI7QUVJN0I7O0FEQ0E7RUFDRSxpQkFBaUI7RUFDakIsZ0JBQWdCO0VBQ2hCLGNBQWM7QUNFaEI7O0FEQ0E7RUFDRTtJQUNFLGtCRFN1QjtFRVB6QjtBQUNGIiwiZmlsZSI6ImdlbmVyYWwuY3NzIn0= */
